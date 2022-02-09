@@ -10,7 +10,9 @@ namespace DemoGitActionsTest
         public void TestAddTwoNumbersCorrect()
         {
             int res = Program.AddTwoNumbers(91, 10);
-            Assert.AreEqual(101, res);
+
+            Assert.Fail();
+            //Assert.AreEqual(101, res);
         }
 
 
