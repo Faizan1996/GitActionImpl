@@ -55,6 +55,7 @@ namespace DemoGitActionsTest
         [Test]
         public void TestSubtarctTwoNumbersException()
         {
+            Assert.Fail();
             Assert.Throws<OverflowException>(SubtractTwoNumberDelegate);
         }
 
