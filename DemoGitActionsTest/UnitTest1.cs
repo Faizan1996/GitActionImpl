@@ -47,7 +47,8 @@ namespace DemoGitActionsTest
         public void TestSubtarctTwoNumbersWrong()
         {
             int res = Program.SubtractTwoNumbers(91, 10);
-            Assert.AreNotEqual(111, res);
+            Assert.Fail();
+            //Assert.AreNotEqual(111, res);
         }
 
 
