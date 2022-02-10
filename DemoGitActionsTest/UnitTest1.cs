@@ -25,11 +25,14 @@ namespace DemoGitActionsTest
         [Test]
         public void TestAddTwoNumbersException()
         {
-            Assert.Throws<OverflowException>(AddTwoNumbeDelegate);
+            //Assert
+            //Added
+            Assert.Throws<NullReferenceException>(AddTwoNumbeDelegate);
         }
 
         public void AddTwoNumbeDelegate()
         {
+            //Added 
             Program.AddTwoNumbers(int.MaxValue, 1);
         }
 
@@ -38,6 +41,7 @@ namespace DemoGitActionsTest
         [Test]
         public void TestSubtarctTwoNumbersCorrect()
         {
+         
             int res = Program.SubtractTwoNumbers(91, 10);
             Assert.AreEqual(81, res);
         }
