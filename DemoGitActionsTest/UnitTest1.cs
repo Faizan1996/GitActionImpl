@@ -27,7 +27,7 @@ namespace DemoGitActionsTest
         {
             //Assert
             //Added
-            Assert.Throws<OverflowException>(AddTwoNumbeDelegate);
+            Assert.Throws<NullReferenceException>(AddTwoNumbeDelegate);
         }
 
         public void AddTwoNumbeDelegate()
